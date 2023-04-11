@@ -1,14 +1,11 @@
-//Transformar um número quebrado com casas decímais e trocar ponto por virgula.
+// Transformar letras minúsculas em letras maiúsculas, faças o contrario disso tbm.
 
+let word = "Programar é muito Massa!"
 
-let number = 154.445645132498
+console.log(word)// Programar é muito Massa!
 
-console.log(number.toFixed(2)) // 154.45
+console.log(word.toUpperCase())// PROGRAMAR É MUITO MASSA!
 
-console.log(typeof (number.toFixed(2))) // string
+console.log(word.toLowerCase())// programar é muito massa!
 
-console.log(typeof Number(number.toFixed(2))) // number
-
-console.log((number.toFixed(2).replace('.',','))) //154,45 (alterei o '.' por ',')
-
-console.log(Number(number.toFixed(2).replace('.',','))) // NaN (por causa da vírgula que é uma string)
+console.log(word.toLowerCase().toUpperCase())// PROGRAMAR É MUITO MASSA!
